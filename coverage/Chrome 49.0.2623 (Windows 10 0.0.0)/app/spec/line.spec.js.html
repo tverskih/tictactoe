@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app\spec\line.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">app/spec/</a> line.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>68/68</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>15/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>68/68</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">describe('Cell', function () {
+    var $injector       = angular.injector(['myApp']);
+    var PlaySymbolModel = $injector.get('PlaySymbolModel');
+    var CellModel       = $injector.get('CellModel');
+    var LineModel       = $injector.get('LineModel');
+&nbsp;
+    // var cell;
+    var symbolEmpty = new PlaySymbolModel();
+    var symbolX = new PlaySymbolModel('x');
+    var symbolY  = new PlaySymbolModel('y');
+    var cell1;
+    var cell2;
+    var cell3;
+&nbsp;
+&nbsp;
+    beforeEach(function () {
+        cell1 = new CellModel(symbolX);
+        cell2 = new CellModel(symbolX);
+        cell3 = new CellModel(symbolX);
+        cell4 = new CellModel(symbolY);
+        cellEmpty1 = new CellModel(symbolEmpty);
+        cellEmpty2 = new CellModel(symbolEmpty);
+        cellEmpty3 = new CellModel(symbolEmpty);
+    });
+&nbsp;
+    it('returns its cells', function () {
+        var line  = new LineModel(cell1, cell2, cell3),
+            cells = line.getCells();
+&nbsp;
+        expect(cells[0]).toEqual(cell1);
+        expect(cells[1]).toEqual(cell2);
+        expect(cells[2]).toEqual(cell3);
+    });
+&nbsp;
+    it('counts symbols', function () {
+        var line  = new LineModel(cell1, cell2, cell4);
+        expect(line.countSymbol(symbolX)).toEqual(2);
+        expect(line.countSymbol(symbolY)).toEqual(1);
+    });
+&nbsp;
+    it('counts enemy symbols', function () {
+        var line  = new LineModel(cell1, cell2, cell4);
+        expect(line.countEnemySymbol(symbolX)).toEqual(1);
+        expect(line.countEnemySymbol(symbolY)).toEqual(2);
+    });
+&nbsp;
+&nbsp;
+    describe('getEmptyCell method', function () {
+        it('returns empty cell if any', function () {
+            var line1 = new LineModel(cell1, cellEmpty1, cell2);
+            var line2 = new LineModel(cellEmpty2, cell1, cell2);
+            var line3 = new LineModel(cell1, cell2, cellEmpty3);
+&nbsp;
+            expect(line1.getEmptyCell().isSet()).toBe(false);
+            expect(line2.getEmptyCell().isSet()).toBe(false);
+            expect(line3.getEmptyCell().isSet()).toBe(false);
+&nbsp;
+            expect(line1.getEmptyCell() === cellEmpty1).toBe(true);
+            expect(line2.getEmptyCell() === cellEmpty2).toBe(true);
+            expect(line3.getEmptyCell() === cellEmpty3).toBe(true);
+        });
+&nbsp;
+        it('returns null if no empty cells', function () {
+            var line  = new LineModel(cell1, cell2, cell3);
+                emptyCell = line.getEmptyCell();
+            expect(emptyCell).toEqual(null);
+        });
+    });
+&nbsp;
+    describe('isEmpty method', function () {
+        it('returns true if all cells have empty symbols', function () {
+            var line = new LineModel(cellEmpty1, cellEmpty2, cellEmpty3);
+            expect(line.isEmpty()).toEqual(true);
+        });
+&nbsp;
+        it('returns false if some of cells are not empty', function () {
+            var line = new LineModel(cellEmpty1, cellEmpty2, cell1);
+            expect(line.isEmpty()).toEqual(false);
+        });
+    });
+&nbsp;
+    describe('isWinning method', function () {
+&nbsp;
+        it('returns true if all symbols are equal and not null', function () {
+            var line  = new LineModel(cell1, cell2, cell3);
+            expect(line.isWinning()).toEqual(true);
+        });
+&nbsp;
+        it('returns false if symbols are not equal', function () {
+            var line1  = new LineModel(cell1, cell2, cell4);
+            var line2  = new LineModel(cell1, cell4, cell2);
+            var line3  = new LineModel(cell4, cell1, cell2);
+&nbsp;
+            expect(line1.isWinning()).toEqual(false);
+            expect(line2.isWinning()).toEqual(false);
+            expect(line3.isWinning()).toEqual(false);
+        });
+&nbsp;
+        it('returns false if all symbols are empty', function () {
+            var line = new LineModel(cellEmpty1, cellEmpty2, cellEmpty3);
+            expect(line.isWinning()).toEqual(false);
+        });
+    });
+});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Apr 27 2016 03:31:14 GMT+0300 (RTZ 2 (зима))
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

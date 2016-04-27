@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #272822;
+}
+
+button {
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.container {
+  width: 80%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-container {
+  color: #aaa;
+}
+.game-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.game-col {
+  float: left;
+  width: 33.333333%;
+  }
+  .game-col svg {
+    fill: #aaa;
+    width: 100%;
+    height: 100%;
+  }
+  .game-col.winning-fill svg {
+    fill: green;
+  }
+
+
+.proportional-height:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.hover-lightblue:hover {
+  background-color: #567c9d;
+}
+.border-white {
+  border: 1px solid white;
+}
+.border-left-0 {
+  border-left: 0;
+}
+.border-bottom-0 {
+  border-bottom: 0;
+}
+.border-left-white {
+  border-left: 1px solid white;
+}
+.border-bottom-white {
+  border-bottom: 1px solid white;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.p12 {
+  padding: 12px;
+}
+.mb12 {
+  margin-bottom: 12px;
+}
+.color-white {
+  color: #aaa;
+}
+.text-center {
+  text-align: center;
+}
+.clear-both:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.inline-block {
+  display: inline-block;
+}

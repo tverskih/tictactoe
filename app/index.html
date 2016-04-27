@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" ng-controller="MainController">
+    <h3 class="color-white text-center">Tic Tac Toe Game</h3>
+    <div class="text-center mb12">
+      <button type="button" ng-click="newGame()">Start New Game</button>
+    </div>
+    <div class="text-center mb12">
+      <div class="clear-both text-center inline-block">
+        <label class="color-white fl">
+          <input class="fl" type="checkbox" ng-model="computerFirst" />
+          Computer Turn is First
+        </label>
+      </div>
+    </div>
+
+    <div class="game-container border-left-white border-bottom-white">
+      <div class="game-col position-relative border-white
+        proportional-height border-left-0 border-bottom-0"
+          ng-repeat="cell in cells"
+          ng-class="{
+              'hover-lightblue cursor-pointer pproportional-height': !cell.isSet(),
+              'winning-fill': (winningLine.getCells().indexOf(cell) > -1)}"
+          ng-click="!cell.isSet() && makeTurn(cell)">
+
+          <svg class="icon position-absolute p12"
+             ng-show="cell.getSymbol().toString() === 'o'">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="assets/symbol-defs.svg#tictac-radio-unchecked"></use>
+          </svg>
+
+          <svg class="icon position-absolute p12"
+            ng-show="cell.getSymbol().toString() === 'x'">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="assets/symbol-defs.svg#tictac-cross"></use>
+          </svg>
+
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-center color-white" ng-show="winningLine">
+        Computer wins
+      </h2>
+    </div>
+
+  </div>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/svgxuse/svgxuse.min.js"></script>
+  <script src="init.js"></script>
+  <script src="controllers/mainCtrl.js"></script>
+
+  <script src="models/aiPlayer.js"></script>
+  <script src="models/player.js"></script>
+  <script src="models/cell.js"></script>
+  <script src="models/line.js"></script>
+  <script src="models/playground.js"></script>
+  <script src="models/playSymbol.js"></script>
+  <script src="models/game.js"></script>
+</body>
+</html>
